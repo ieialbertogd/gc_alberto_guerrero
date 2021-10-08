@@ -6,6 +6,8 @@ Please open a terminal window and follow the following steps to run the applicat
 2. Go to path gc_alberto_guerrero
 3. Run command: composer install 
 4. Run command: php artisan serve
+5. Open the url http://127.0.0.1:8000/ in your favorite browser (chrome or firefox preferably)
+5. It's necessary to upload a txt file with the matrix (in the root of the project, one test file named sample1.txt was placed for testing purposes. Feel free to modify it as you wish.)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
