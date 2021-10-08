@@ -1,3 +1,12 @@
+## Running the application
+
+Please open a terminal window and follow the following steps to run the application:
+
+1. git clone https://github.com/ieialbertogd/gc_alberto_guerrero.git
+2. Go to path gc_alberto_guerrero
+3. Run command: composer install 
+4. Run command: php artisan serve
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
