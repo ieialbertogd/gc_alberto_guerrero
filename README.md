@@ -1,6 +1,6 @@
 ## Running the application
 
-Please open a terminal window and follow the following steps to run the application:
+Please open a terminal window and follow the next steps to run the application:
 
 1. git clone https://github.com/ieialbertogd/gc_alberto_guerrero.git
 2. Go to path gc_alberto_guerrero
