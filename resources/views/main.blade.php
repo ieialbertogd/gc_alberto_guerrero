@@ -19,7 +19,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <!-- Scripts -->
-        <script src="{{asset('js/app.js')}}" defer></script>
+        <script src="{{asset('js/app.js?v='.time())}}" defer></script>
     <script>
        window.Laravel = <?php echo json_encode([
                 'csrfToken' => csrf_token(),
