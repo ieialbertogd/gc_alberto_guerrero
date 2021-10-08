@@ -55,7 +55,7 @@ class MatrixUploader extends Controller
         //Verificamos los nodos que solo tienen una unica salida, ahi hay que poner
         //una bombilla en la salida
         foreach($pendingBulbsPositions AS $bulbPosition){
-            $position = ['x' => 0, 'y' => 0];
+            $position = [];
             //primero checamos a la derecha
             if(isset($analyzedMatrix[$bulbPosition['y']][$bulbPosition['x']+1]) 
             && !$analyzedMatrix[$bulbPosition['y']][$bulbPosition['x']+1]['isWall']
@@ -80,7 +80,9 @@ class MatrixUploader extends Controller
             }
 
             //Marcamos como iluminados los nodos contiguos
-            CustomDFSHelper::setIluminatedArea($analyzedMatrix, $position['x'], $position['y']);
+            if(!empty($position)){
+                CustomDFSHelper::setIluminatedArea($analyzedMatrix, $position['x'], $position['y']);
+            }
         }
         //Definir donde iran los focos en base a los pesos de cada nodo segun sus relaciones
         $totNodes = count($analyzedMatrix) * count($analyzedMatrix[0]);

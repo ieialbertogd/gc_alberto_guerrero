@@ -16,11 +16,6 @@ export default {
             name: "gc_logictest",
             component: MatrixUploader
         },
-        {
-            path: prefix + "/result",
-            name: "result",
-            component: Welcome
-        },
     ],
     
 };

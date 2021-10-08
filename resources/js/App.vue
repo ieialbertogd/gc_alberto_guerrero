@@ -19,7 +19,7 @@
   </el-aside>
 
   <el-container>
-
+<el-header><h4>PRUEBA DE LÓGICA GC - ALBERTO GUERRERO DURAN</h4></el-header>
     <el-main  class="bg-purple-light">
         <div v-if="loadMatrix && matrixEmpty">
             <matrix-uploader @matrixLoaded = drawMatrix />

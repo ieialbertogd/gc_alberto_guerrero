@@ -27,6 +27,7 @@
                         <td :class="classNode(node)" v-for="(node, index_node) in line_node" :key="`room-${index}-${index_node}`"> 
                             <i class="el-icon-s-opportunity" v-if="node.isLightBulb"></i>
                             <span v-if="node.illuminated && !node.isWall && !node.isLightBulb">i</span>
+                            <!-- {{node.weight}} -->
                         </td>
                     </tr>
                 </tbody>

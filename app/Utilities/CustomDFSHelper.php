@@ -39,13 +39,13 @@ class CustomDFSHelper
         return;
     }
 
-    public static function setIluminatedArea(array &$matrix, $x, $y){
-        static::$rows = count($matrix);
-        static::$columns = count($matrix[0]);
-        self::searchIluminatedNodes($matrix,$x, $y, 1, 0);//busqueda a la derecha del nodo
-        self::searchIluminatedNodes($matrix,$x, $y, 0, 1);//busqueda hacia abajo del nodo
-        self::searchIluminatedNodes($matrix,$x, $y, -1, 0);//busqueda a la izquierda del nodo
-        self::searchIluminatedNodes($matrix,$x, $y, 0, -1);//busqueda hacia arriba del nodo
+    public static function setIluminatedArea(array &$matrixA, $x, $y){
+        static::$rows = count($matrixA);
+        static::$columns = count($matrixA[0]);
+        self::searchIluminatedNodes($matrixA,$x, $y, 1, 0);//busqueda a la derecha del nodo
+        self::searchIluminatedNodes($matrixA,$x, $y, 0, 1);//busqueda hacia abajo del nodo
+        self::searchIluminatedNodes($matrixA,$x, $y, -1, 0);//busqueda a la izquierda del nodo
+        self::searchIluminatedNodes($matrixA,$x, $y, 0, -1);//busqueda hacia arriba del nodo
     }
 
     private static function searchIluminatedNodes(array &$matrix,int $x, int $y, int $factorX, int $factorY){
